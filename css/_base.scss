@@ -1,0 +1,37 @@
+/* Variables */
+$white: #fff;
+$black: #000;
+$grey-100: #f5f7fa;
+$grey-150: #f0f1f3;
+$grey-200: #e4e7eb;
+$grey-300: #dbdde0;
+$grey-400: #cbd2d9;
+$grey-700: #3d3d3d;
+$grey-900: #1d1d1d;
+$orange-500: #f35627;
+$orange-600: #df4f23;
+$purple: #acb6e5;
+$blue: #74ebd5;
+
+/* General Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $dark-grey;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Own Styles */

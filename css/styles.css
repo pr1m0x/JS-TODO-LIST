@@ -1,0 +1,157 @@
+/* Generelle Styles -> Styles für diese Component unten einfügen */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+/* Component/Functionality CSS  --> Eigene Styles darunter einfügen */
+
+/*  CONTAINER */
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+/*  LIST_CONTAINER */
+.todo__container {
+  width: 50rem;
+  min-height: 15rem;
+  background-color: whitesmoke;
+}
+
+/* Input Head */
+.task__input {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  background-color: #0a558c;
+  padding: 2rem;
+  color: white;
+}
+
+.task__input label {
+  position: absolute;
+  left: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  top: 1rem;
+}
+
+.task__input input {
+  font-size: 2.5rem;
+  background-color: #0a558c;
+  border: 0;
+  color: white;
+  justify-self: flex-start;
+}
+
+.task__input input:focus {
+  outline: none;
+}
+
+/* LI */
+
+li input {
+  margin-right: 1rem;
+  vertical-align: middle;
+  position: relative;
+  bottom: 2.5px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.transparent {
+  opacity: 0.5;
+}
+
+li:hover {
+  background-color: rgb(215, 241, 241);
+}
+
+/* SPAN */
+span.delete {
+  opacity: 0;
+  color: white;
+  float: right;
+  position: relative;
+  background-color: teal;
+  border-radius: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+  top: 3.5px;
+}
+
+span.delete::before {
+  content: "×";
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transform: translateX(-20%);
+  transform: translateY(-20%);
+}
+li:hover .opacity {
+  opacity: 1;
+}
+
+/* BUTTON */
+.btn__task {
+  padding: 1.5rem 1rem;
+  background-color: turquoise;
+  border: 0;
+  justify-self: flex-end;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* to do list ul */
+.todo__list {
+  padding: 1rem;
+  list-style-type: none;
+}
+
+/* REST */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #3981b8;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #3981b8;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #3981b8;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #3981b8;
+}
